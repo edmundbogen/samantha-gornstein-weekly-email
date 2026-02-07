@@ -43,6 +43,63 @@
       color: #a0a0a0;
       font-size: 12px;
     }
+    /* Hero Section */
+    .hero {
+      position: relative;
+      height: 400px;
+      background: linear-gradient(135deg, rgba(26,62,92,0.85) 0%, rgba(26,62,92,0.7) 100%), url('https://edmundbogen.github.io/samantha-gornstein-weekly-email/samantha-hero.png') center/cover no-repeat;
+      display: flex;
+      align-items: flex-end;
+      padding: 60px;
+    }
+    .hero-content {
+      max-width: 900px;
+    }
+    .hero-category {
+      color: #00a8e1;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+    .hero-title {
+      color: #ffffff;
+      font-size: 38px;
+      font-weight: 300;
+      line-height: 1.2;
+      letter-spacing: -0.5px;
+      margin-bottom: 20px;
+    }
+    .hero-subtitle {
+      color: #e8e8e8;
+      font-size: 18px;
+      font-weight: 300;
+      margin-bottom: 25px;
+    }
+    .hero-cta {
+      display: inline-block;
+      background-color: #00a8e1;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 15px 35px;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .hero-cta:hover {
+      background-color: #0090c5;
+    }
+    @media (max-width: 768px) {
+      .hero {
+        height: auto;
+        padding: 40px 20px;
+      }
+      .hero-title {
+        font-size: 28px;
+      }
+    }
     .container {
       max-width: 1200px;
       margin: 0 auto;
@@ -318,6 +375,16 @@
     <div class="header-title">Luxury Communities Market Intelligence Dashboard</div>
     <div class="header-date">Data as of February 4, 2026</div>
   </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-category">Your Polo Club Specialist</div>
+      <h1 class="hero-title">Samantha Gornstein</h1>
+      <p class="hero-subtitle">Luxury Real Estate | The Edmund Bogen Team at Douglas Elliman</p>
+      <a href="polo-club-listings.html" class="hero-cta">View Polo Club Listings</a>
+    </div>
+  </section>
 
   <div class="polo-club-cta">
     <a href="polo-club-listings.html">View All 9 Active Polo Club Listings →</a>
